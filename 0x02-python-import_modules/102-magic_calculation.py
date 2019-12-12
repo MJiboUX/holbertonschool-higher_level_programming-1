@@ -6,5 +6,4 @@ def magic_calculation(a, b):
         for i in range (38, 90):
             c = c + i
         return(c)
-    else:
-        return(sub(a, b))
+    return(sub(a, b))
