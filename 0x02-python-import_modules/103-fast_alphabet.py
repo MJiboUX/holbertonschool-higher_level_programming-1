@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+alpha = list(map(chr, range(65, 91)))
+print(''.join(alpha))
