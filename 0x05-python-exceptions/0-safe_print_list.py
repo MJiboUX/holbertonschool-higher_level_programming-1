@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    if x < 0:
+        return(0)
     for i in my_list:
         if i <= x:
             try:
@@ -7,7 +9,7 @@ def safe_print_list(my_list=[], x=0):
             except:
                 print("An exception occurred")
         else:
-            i -= 1 
+            i -= 1
             break
     print()
     return(i)
