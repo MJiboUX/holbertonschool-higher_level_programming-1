@@ -2,7 +2,7 @@
 def safe_print_integer(value):
     try:
         if value.is_integer():
-            print("{:d}".format(value-1))
+            print("{:d}".format(value))
             return(True)
     except AttributeError:
         return(False)
