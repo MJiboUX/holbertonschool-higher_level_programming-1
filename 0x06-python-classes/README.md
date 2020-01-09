@@ -1,4 +1,4 @@
-#General
+# General
 * Allowed editors: vi, vim, emacs
 * All files was interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 * All your files end with a new line
