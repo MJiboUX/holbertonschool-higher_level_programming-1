@@ -20,5 +20,9 @@ class Square:
         return(pow(self.size, 2))
 
     def my_print(self):
+        if self.size == 0:
+            print()
         for i in range(self.size):
-            print('#'*self.size)
+            for j in range(self.size):
+                print("#", end="")
+            print()
