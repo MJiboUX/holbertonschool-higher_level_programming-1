@@ -1,0 +1,40 @@
+Importing function:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Two integers test:
+>>> add_integer(1, 98)
+99
+
+One integer and one float:
+>>> add_integer(2.5, 98)
+100
+
+Positive and negative:
+>>> add_integer(5, -2)
+3
+
+negative and positive:
+>>> add_integer(-8, 2)
+-6
+
+Type char and integer:
+>>> add_integer("hello", 10)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Integer and type char:
+>>> add_integer(4, "test")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+An integer and empty b:
+>>> add_integer(10)
+108
+
+An empty function:
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
