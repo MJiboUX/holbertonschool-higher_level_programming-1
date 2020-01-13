@@ -1,13 +1,12 @@
 #!/usr/bin/python3
+""" Addition function
+    a: first integer
+    b: second integer
+    returns: a + b
+"""
 def add_integer(a, b=98):
     """ Adds two integers
-
-    Args:
-        a: first integer
-        b: second integer(value of 98 by default)
-
-    Returns:
-       integer: The addition of a and b, TypeError otherwise.
+        a, b: integers (can also be floats.
     """
     if a is None:
         raise TypeError("a must be an integer")
