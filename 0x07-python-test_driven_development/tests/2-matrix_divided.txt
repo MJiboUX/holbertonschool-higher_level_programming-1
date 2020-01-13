@@ -1,0 +1,36 @@
+Importing function:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Matrix should be of type list:
+>>> matrix = 5
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Matrix should be type list of lists:
+>>> matrix = [[1, 2, 3], "a", 2]
+>>> matrix_divided(matrix, 5)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Number of elements should have the same size:
+>>> matrix = [[1, 2, 3], [1, 2, 3, 4]]
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+Divisor must be a number(integer/float):
+>>> matrix = [[2, 4, 6], [1, 2, 3]]
+>>> matrix_divided(matrix, "abc")
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+Divisor can't be equal to 0:
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
