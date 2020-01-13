@@ -4,6 +4,8 @@
     b: second integer
     returns: a + b
 """
+
+
 def add_integer(a, b=98):
     """ Adds two integers
         a, b: integers (can also be floats.
