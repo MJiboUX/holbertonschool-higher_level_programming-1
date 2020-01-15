@@ -13,6 +13,12 @@ Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
 
+First and last name are empty:
+>>> say_my_name(None)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
 Last name is empty:
 >>> say_my_name("Danny")
 My name is Danny 
