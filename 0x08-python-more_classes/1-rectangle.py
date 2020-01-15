@@ -1,6 +1,8 @@
 """
 Real definition of a rectangle
 """
+
+
 class Rectangle:
     """A definition of a rectangle.
 
