@@ -7,4 +7,3 @@
 * Your code should use the PEP 8 style (version 1.7.*)
 * All files must be executable
 * The length of files will be tested using wc
-*
