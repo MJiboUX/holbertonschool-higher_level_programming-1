@@ -9,6 +9,10 @@ One integer and one float:
 >>> add_integer(2.5, 98)
 100
 
+Two floats:
+>>> add_integer(2.5, 3.5)
+5
+
 Positive and negative:
 >>> add_integer(5, -2)
 3
@@ -16,6 +20,12 @@ Positive and negative:
 negative and positive:
 >>> add_integer(-8, 2)
 -6
+
+Float Overflow:
+>>> add_integer(float('inf'), 5)
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
 
 Type char and integer:
 >>> add_integer("hello", 10)
