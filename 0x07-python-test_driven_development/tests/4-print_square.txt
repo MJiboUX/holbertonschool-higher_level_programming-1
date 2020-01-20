@@ -1,6 +1,11 @@
 Importing function:
 >>> print_square = __import__('4-print_square').print_square
 
+Size = integer and > 0:
+>>> print_square(2)
+##
+##
+
 Size should be an integer:
 >>> print_square("5")
 Traceback (most recent call last):
@@ -18,3 +23,9 @@ Size can't be a float and less than 0:
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
+
+Missing one argument:
+>>> print_square()
+Traceback (most recent call last):
+    ...
+TypeError: print_square() missing 1 required positional argument: 'size'
