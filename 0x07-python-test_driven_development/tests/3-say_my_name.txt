@@ -26,3 +26,9 @@ My name is Danny
 First name and last name are strings:
 >>> say_my_name("Frank", "Zappa")
 My name is Frank Zappa
+
+Missing 2 arguments:
+>>> say_my_name(None, None)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
