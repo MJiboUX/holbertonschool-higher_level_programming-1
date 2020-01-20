@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Real definition of a rectangle.
 Calculates area and parameter.
