@@ -21,4 +21,4 @@ def text_indentation(text):
             s[i+1] = "\n\n"
     nospace = ""
     nospace = nospace.join(s)
-    print(nospace)
+    print(nospace, end="")
