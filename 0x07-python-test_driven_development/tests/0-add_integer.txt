@@ -27,6 +27,12 @@ Traceback (most recent call last):
     ...
 OverflowError: cannot convert float infinity to integer
 
+Cannot convert float NaN to integer:
+>>> add_integer(float('NaN'), 5)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
+
 Type char and integer:
 >>> add_integer("hello", 10)
 Traceback (most recent call last):
