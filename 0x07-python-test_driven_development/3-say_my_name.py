@@ -10,9 +10,9 @@ def say_my_name(first_name, last_name=""):
            first_name: first name
            last_name: last name
     """
-    if type(first_name) is not str:
+    if type(first_name) is not str or first_name is None:
         raise TypeError("first_name must be a string")
-    if type(last_name) is not str:
+    if type(last_name) is not str or last_name is None:
         raise TypeError("last_name must be a string")
     if type(first_name) is None and type(last_name) is None:
         raise TypeError("first_name must be a string")
