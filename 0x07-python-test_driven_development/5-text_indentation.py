@@ -15,11 +15,17 @@ def text_indentation(text):
     s = list(text)
     for i in range(len(s)):
         if s[i] == ".":
-            s[i+1] = "\n\n"
+            s[i] = ".\n\n"
+            if s[i+1] == " ":
+                s[i+1] = ""
         if s[i] == ":":
-            s[i+1] = "\n\n"
+            s[i] = ":\n\n"
+            if s[i+1] == " ":
+                s[i+1] = ""
         if s[i] == "?":
-            s[i+1] = "\n\n"
+            s[i] = "?\n\n"
+            if s[i+1] == " ":
+                s[i+1] = ""
     nospace = ""
     nospace = nospace.join(s)
     print(nospace, end="")
