@@ -1,6 +1,16 @@
 Importing function:
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
+Correct Output:
+>>> text_indentation("""av. dfd? asdf: sdfkj""")
+av.
+<BLANKLINE>
+dfd?
+<BLANKLINE>
+asdf:
+<BLANKLINE>
+sdfkj
+
 Text should be of string type:
 >>> text_indentation(20)
 Traceback (most recent call last):
