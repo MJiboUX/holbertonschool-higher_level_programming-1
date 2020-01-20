@@ -28,7 +28,7 @@ First name and last name are strings:
 My name is Frank Zappa
 
 Missing 2 arguments:
->>> say_my_name(None, None)
+>>> say_my_name(None)
 Traceback (most recent call last):
     ...
 TypeError: first_name must be a string
