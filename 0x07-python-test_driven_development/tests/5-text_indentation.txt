@@ -1,18 +1,34 @@
 Importing function:
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Correct Output:
->>> text_indentation("""av. dfd? asdf: sdfkj""")
-av.
+Correct Output - case: "Holberton School":
+>>> text_indentation("Holberton School")
+Holberton School
+
+Correct output - case: "Holberton.School":
+>>> text_indentation("Holberton.School")
+Holberton.
 <BLANKLINE>
-dfd?
+School
+
+Correct output - case: "Holberton. School? How are you: John":
+>>> text_indentation("Holberton. School? How are you: John")
+Holberton.
 <BLANKLINE>
-asdf:
+School?
 <BLANKLINE>
-sdfkj
+How are you:
+<BLANKLINE>
+John
 
 Text should be of string type:
 >>> text_indentation(20)
 Traceback (most recent call last):
     ...
 TypeError: text must be a string
+
+Missing one argument:
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
