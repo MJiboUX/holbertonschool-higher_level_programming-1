@@ -46,3 +46,15 @@ Divisor can't be equal to 0:
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
+
+Missing one argument:
+>>> matrix_divided([[1, 2, 3], [1, 2, 3]], None)
+Traceback (most recent call last):
+    ...
+TypeError: div must be a number
+
+Missing 2 arguments:
+>>> matrix_divided(None, None)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
