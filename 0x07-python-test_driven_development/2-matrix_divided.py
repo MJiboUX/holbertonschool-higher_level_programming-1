@@ -14,13 +14,13 @@ def matrix_divided(matrix, div):
     """
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    for row in matrix:
-        if type(row) is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
-    for row in matrix:
-        for x in row:
-            if type(x) is not int or type(x) is not float:
+    if not all(isinstance(x, list) for x in matrix):
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
+    for i in matrix:
+        for x in i:
+            if not isinstance(x, (int, float)):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     for x in matrix:
