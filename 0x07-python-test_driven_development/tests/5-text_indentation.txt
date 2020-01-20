@@ -1,5 +1,5 @@
 Importing function:
-text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Text should be of string type:
 >>> text_indentation(20)
