@@ -23,9 +23,9 @@
 * All files must be executable
 ## Python Test Cases
 * Allowed editors: vi, vim, emacs
-* All files should end with a new line
-* All test files should be inside a folder tests
-* All test files should be text files (extension: .txt)
+* All files end with a new line
+* All test files are inside a folder tests
+* All test files are text files (extension: .txt)
 * All tests should be executed by using this command: python3 -m doctest ./tests/*
 * All modules have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
 * All classes have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
