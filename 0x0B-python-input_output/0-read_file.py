@@ -2,6 +2,8 @@
 """
 Reading a file
 """
+
+
 def read_file(filename=""):
     """function that read a file
        Args:
