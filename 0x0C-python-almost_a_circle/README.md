@@ -11,6 +11,7 @@ In this project, I will review everything about Python:
 * Inheritance
 * Unittest
 * Read/Write file
+
 I will also learn about:
 * args and kwargs
 * Serialization/Deserialization
