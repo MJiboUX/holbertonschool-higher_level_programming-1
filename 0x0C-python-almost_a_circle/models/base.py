@@ -36,7 +36,7 @@ class Base:
            Returns:
               the JSON string representation of list_dictionaries
         """
-        if type(list_dictionaries) is None:
+        if type(list_dictionaries) is None or len(list_dictionaries) == 0:
             return("[]")
         json_string = json.dumps(list_dictionaries)
         return(json_string)
