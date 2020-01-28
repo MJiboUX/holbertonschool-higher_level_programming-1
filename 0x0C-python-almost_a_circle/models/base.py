@@ -3,6 +3,8 @@
 Base class
 """
 
+import json
+
 
 class Base:
     """Base class:
@@ -27,3 +29,14 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """JSON is one of the standard formats
+           for sharing data representation.
+           Returns:
+              the JSON string representation of list_dictionaries
+        """
+        if type(list_dictionaries) is None:
+            return("[]")
+        json_string = json.dumps(list_dictionaries)
+        return(json_string)
