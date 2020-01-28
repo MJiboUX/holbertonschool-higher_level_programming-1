@@ -47,6 +47,18 @@ class Rectangle(Base):
         return("[Rectangle] ({}) {}/{} - {}/{}"
                .format(self.id, self.x, self.y, self.width, self.height))
 
+    def to_dictionary(self):
+        """Returns:
+              the dictionary representation of a Rectangle
+        """
+        d = dict()
+        d["id"] = self.id
+        d["width"] = self.width
+        d["height"] = self.height
+        d["x"] = self.x
+        d["y"] = self.y
+        return(d)
+
     @property
     def width(self):
         """width getter
@@ -132,6 +144,9 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """updates the class Rectangle by adding this public method
            that assigns an argument to each attribute
+           Args:
+               *args (tuple): arguments of function
+               **kwargs (dict): argument dictionary of function
         """
         if len(args) != 0:
             if len(args) > 0:
