@@ -53,5 +53,5 @@ class Base:
         for i in list_objs:
             l.append(i.to_dictionary())
         with open(f, "w") as f:
-            f.write(Base.to_json_string(list_objs))
+            f.write(Base.to_json_string(l))
 Base.to_json_string = staticmethod(Base.to_json_string)
