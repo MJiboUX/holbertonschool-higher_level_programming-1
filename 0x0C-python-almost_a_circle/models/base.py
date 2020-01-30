@@ -52,5 +52,5 @@ class Base:
         if list_objs is None:
             return(l)
         with open(f, "w") as f:
-            f.write(json.dumps(list_objs, default=lambda x: x.__dict__))
+            f.write(Base.to_json_string(list_objs))
 Base.to_json_string = staticmethod(Base.to_json_string)
