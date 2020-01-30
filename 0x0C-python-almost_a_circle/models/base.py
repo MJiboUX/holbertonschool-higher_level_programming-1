@@ -38,7 +38,8 @@ class Base:
         """
         if list_dictionaries is None:
             return("[]")
-        json_string = json.dumps(list_dictionaries)
+        json_string = json.dumps(list_dictionaries,
+                                 default=lambda x: x.__dict__)
         return(json_string)
 
     @classmethod
