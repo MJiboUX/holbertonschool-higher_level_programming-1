@@ -2,7 +2,6 @@
 """
 Base class
 """
-
 import json
 
 
@@ -51,6 +50,8 @@ class Base:
         f = cls.__name__ + ".json"
         if list_objs is None:
             return(l)
+        for i in list_objs:
+            l.append(i.to_dictionary())
         with open(f, "w") as f:
             f.write(Base.to_json_string(list_objs))
 Base.to_json_string = staticmethod(Base.to_json_string)
