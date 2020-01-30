@@ -47,11 +47,13 @@ class Base:
               to a file
         """
         l = []
-        f = cls.__name__ + ".json"
+        json_file = cls.__name__ + ".json"
         if list_objs is None:
+            with open(json_file, "w") as f:
+                f.write()
             return(l)
         for i in list_objs:
             l.append(i.to_dictionary())
-        with open(f, "w") as f:
+        with open(json_file, "w") as f:
             f.write(Base.to_json_string(l))
 Base.to_json_string = staticmethod(Base.to_json_string)
