@@ -56,4 +56,15 @@ class Base:
             l.append(i.to_dictionary())
         with open(json_file, "w") as f:
             f.write(Base.to_json_string(l))
+
+    def from_json_string(json_string):
+        """Returns:
+               the list of the JSON string representation json_string
+        """
+        l = []
+        if json_string is None or json_string == "":
+            return(l)
+        return(json_string)
+
 Base.to_json_string = staticmethod(Base.to_json_string)
+Base.from_json_string = staticmethod(Base.from_json_string)
