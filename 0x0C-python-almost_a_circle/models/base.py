@@ -40,3 +40,4 @@ class Base:
             return("[]")
         json_string = json.dumps(list_dictionaries)
         return(json_string)
+Base.to_json_string = staticmethod(Base.to_json_string)
