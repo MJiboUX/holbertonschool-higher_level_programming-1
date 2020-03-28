@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          db=sys.argv[3])
     cur = db.cursor()
     command = "SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY st\
-ates.id"
+ates.id;"
     cur.execute(command)
     rows = cur.fetchall()
     for row in rows:
