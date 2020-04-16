@@ -8,6 +8,7 @@ import requests
 if __name__ == "__main__":
     url = 'http://0.0.0.0:5000/search_user'
     if len(sys.argv) < 2:
+        r = requests.post(url, data={'q': ""})
         print("No result")
     else:
         r = requests.post(url, data={'q': sys.argv[1]})
