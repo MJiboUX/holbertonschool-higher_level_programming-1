@@ -11,6 +11,10 @@ if __name__ == "__main__":
         print("No result")
     else:
         r = requests.post(url, data={'q': sys.argv[1]})
+        try:
+            d = r.json()
+        except ValueError:
+            print("Not a valid JSON")
         if len(r.json()) == 0:
             print("No result")
         else:
