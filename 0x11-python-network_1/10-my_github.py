@@ -6,7 +6,6 @@ import sys
 import requests
 
 if __name__ == "__main__":
-    token = '1a0e182fb314d4c9fd8257b7b1a4e345874da1fa'
     url = 'https://api.github.com/user'
     try:
         r = requests.get(url, auth=(sys.argv[1], sys.argv[2]))
