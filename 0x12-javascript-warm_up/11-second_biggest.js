@@ -5,16 +5,17 @@ const process = require('process');
 if (process.argv.length <= 3) {
   console.log('0');
 } else {
-  let max = parseInt(process.argv[2]);
-  for (let i = 3; i < process.argv.length; i++) {
-    if (max < parseInt(process.argv[i])) {
-      max = parseInt(process.argv[i]);
-    }
-  }
-  let second = parseInt(process.argv[2]);
-  for (let i = 3; i < process.argv.length; i++) {
-    if (second < parseInt(process.argv[i]) && parseInt(process.argv[i]) !== max) {
-      second = parseInt(process.argv[i]);
+  const a = process.argv.splice(2, process.argv.length - 2);
+
+  let max = -Infinity, second = -Infinity;
+
+  for (const value of a) {
+    const n = Number(value);
+
+    if (n > max) {
+      [second, max] = [max, n];
+    } else if (n < max && n > second) {
+      second = n;
     }
   }
   console.log(second);
