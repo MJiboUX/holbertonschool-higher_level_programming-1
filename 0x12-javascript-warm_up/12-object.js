@@ -4,7 +4,5 @@ const myObject = {
   value: 12
 };
 console.log(myObject);
-
-Reflect.set(myObject, 'value', 98);
-
+Reflect.set(myObject, 'value', 89);
 console.log(myObject);
