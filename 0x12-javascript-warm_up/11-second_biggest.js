@@ -7,7 +7,8 @@ if (process.argv.length <= 3) {
 } else {
   const a = process.argv.splice(2, process.argv.length - 2);
 
-  let max = -Infinity, second = -Infinity;
+  let max = -Infinity;
+  let second = -Infinity;
 
   for (const value of a) {
     const n = Number(value);
