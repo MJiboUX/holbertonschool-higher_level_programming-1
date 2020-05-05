@@ -5,6 +5,6 @@ const myObject = {
 };
 console.log(myObject);
 
-myObject.value = 98;
+Reflect.set(myObject, 'value', 98);
 
 console.log(myObject);
