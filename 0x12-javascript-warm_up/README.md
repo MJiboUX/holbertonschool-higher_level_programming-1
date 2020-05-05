@@ -20,3 +20,14 @@
 * The first line of all files is ```#!/usr/bin/node```
 * Code is semistandard compliant (version 14.x.x). [Rules of Standard](https://standardjs.com/rules.html) + [semicolons on top](https://github.com/standard/semistandard). Also as reference: [AirBnB style](https://github.com/airbnb/javascript)
 * All files are executable
+# Install Node 10
+```
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+# Install semi-standard
+[Documentation](https://github.com/standard/semistandard)
+```
+$ sudo npm install semistandard --global
+```
+Update your Emacs config with Cohort 2 - San Franciscos [Elaine Yeung](https://twitter.com/egsy) and her [tutorial](https://medium.com/@elaine.yeung/quick-tutorial-adjust-javascript-indentation-in-emacs-f47f6e82d586)
