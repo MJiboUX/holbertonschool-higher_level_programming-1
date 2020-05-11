@@ -10,14 +10,15 @@ module.exports = class Rectangle {
     } else {
       this.width = w;
       this.height = h;
-      this.print = function print () {
-        for (let i = 0; i < h; i++) {
-          for (let j = 0; j < w; j++) {
-            process.stdout.write('X');
-          }
-          process.stdout.write('\n');
-        }
-      };
+    }
+  }
+
+  print () {
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) {
+        process.stdout.write('X');
+      }
+      process.stdout.write('\n');
     }
   }
 };
