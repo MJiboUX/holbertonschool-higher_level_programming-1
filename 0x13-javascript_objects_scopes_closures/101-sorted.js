@@ -7,5 +7,4 @@ for (const value of Object.values(dict)) {
 for (const [key, value] of Object.entries(dict)) {
   dict2[value].push(key);
 }
-console.log(dict);
 console.log(dict2);
