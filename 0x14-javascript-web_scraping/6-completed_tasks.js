@@ -3,7 +3,7 @@ const process = require('process');
 const request = require('request');
 request(process.argv[2], function (error, response, body) {
   if (error) {
-    console.log(error);
+    return console.log(error);
   }
   const data = JSON.parse(body);
   const dict = {};
