@@ -19,5 +19,15 @@ request(process.argv[2], function (error, response, body) {
     }
     j++;
   }
+  let f = 0;
+  for (let key in dict) {
+    if (dict[key] !== 0) {
+      f = 1;
+    }
+  }
+  const d = {};
+  if (f === 0) {
+    return (d);
+  }
   console.log(dict);
 });
