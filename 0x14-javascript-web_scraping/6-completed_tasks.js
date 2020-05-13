@@ -27,7 +27,7 @@ request(process.argv[2], function (error, response, body) {
   }
   const d = {};
   if (f === 0) {
-    return (d);
+    return console.log(d);
   }
   console.log(dict);
 });
