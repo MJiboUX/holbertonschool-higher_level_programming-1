@@ -20,7 +20,7 @@ request(process.argv[2], function (error, response, body) {
     j++;
   }
   let f = 0;
-  for (let key in dict) {
+  for (const key in dict) {
     if (dict[key] !== 0) {
       f = 1;
     }
